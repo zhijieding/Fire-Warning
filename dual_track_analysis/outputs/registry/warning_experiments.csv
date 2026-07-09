@@ -1,0 +1,11 @@
+experiment_id,file_name,category,task_category_zh,duration,event_time_sec,usable_for_warning,usable_for_evolution,track
+1,1_clean.csv,complete_full,完整过程·预警主任务,363.0,136.0,True,True,warning
+2,2_clean.csv,complete_full,完整过程·预警主任务,302.0,138.0,True,True,warning
+3,3_clean.csv,complete_full,完整过程·预警主任务,279.0,70.0,True,True,warning
+4,4_clean.csv,complete_full,完整过程·预警主任务,362.0,95.0,True,True,warning
+5,5_clean.csv,complete_full,完整过程·预警主任务,258.0,58.0,True,True,warning
+6,6_clean.csv,complete_full,完整过程·预警主任务,235.0,77.0,True,True,warning
+7,7_clean.csv,complete_full,完整过程·预警主任务,351.0,90.0,True,True,warning
+8,8_clean.csv,complete_full,完整过程·预警主任务,182.0,62.0,True,True,warning
+9,9_clean.csv,complete_full,完整过程·预警主任务,209.0,91.0,True,True,warning
+10,fire_merged_1hz_reference.csv,reference_long,长时程参考（高质量完整样本，可与预警主任务池区分使用）,1672.0,304.0,True,True,warning

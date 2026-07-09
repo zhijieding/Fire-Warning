@@ -1,0 +1,20 @@
+{
+  "meta_csv": "dataset_ready/unified_1hz/meta.csv",
+  "unified_glob": "dataset_ready/unified_1hz/*_unified_1hz.csv",
+  "usable_csv_dir": "dataset_ready/usable_csv",
+  "warning_output": "dual_track_analysis/outputs/warning",
+  "evolution_output": "dual_track_analysis/outputs/evolution",
+  "smooth_window": 11,
+  "sustain_seconds": 10,
+  "co_safe_ppm": 50.0,
+  "k_safe": 0.7,
+  "co_hazard_ppm": 200.0,
+  "trans_hazard": 0.55,
+  "temp_decay_frac": 0.35,
+  "recovery_sustain_seconds": 5,
+  "recovery_decay_frac": 0.5,
+  "recovery_co_safe_ppm": 100.0,
+  "recovery_k_safe": 0.6,
+  "min_start_time": 20,
+  "evolution_variables": ["CO", "trans", "Heat_max", "T_max"]
+}

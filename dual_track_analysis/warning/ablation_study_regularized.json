@@ -1,0 +1,50 @@
+{
+  "description": "LBCA 结构/损失消融；基线 = kfold_regularized + config.py defaults",
+  "base_kfold_root": "dual_track_analysis/outputs/warning/kfold_regularized",
+  "reference": {
+    "id": "full",
+    "display_name": "Full (layer_bridge, regularized)",
+    "mode": "reference",
+    "note": "不重跑；引用 base_kfold_root/5fold_summary.json"
+  },
+  "ablations": [
+    {
+      "id": "wo_bridge",
+      "display_name": "w/o Bridge",
+      "mode": "train",
+      "description": "去层域桥接两步链，保留 Smoke→Temp 跨模态 + 门控（direct_smoke_temp）",
+      "overrides": {
+        "fusion_mode": "direct_smoke_temp"
+      }
+    },
+    {
+      "id": "wo_cross_attn",
+      "display_name": "w/o Cross-Attn",
+      "mode": "train",
+      "description": "无 cross-attn，三模态 late concat 后 MLP",
+      "overrides": {
+        "fusion_mode": "late_concat"
+      }
+    },
+    {
+      "id": "wo_consist",
+      "display_name": "w/o Consist loss",
+      "mode": "train",
+      "description": "λ_consist=0",
+      "overrides": {
+        "lambda_consist": 0.0
+      }
+    },
+    {
+      "id": "wo_pred",
+      "display_name": "w/o Pred (warn-only)",
+      "mode": "train",
+      "description": "无回归/趋势/物理约束，仅预警头监督共享骨干",
+      "overrides": {
+        "lambda_pred": 0.0,
+        "lambda_trend": 0.0,
+        "lambda_consist": 0.0
+      }
+    }
+  ]
+}

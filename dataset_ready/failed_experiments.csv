@@ -1,0 +1,8 @@
+﻿file,raw_rows,clean_rows,duration_sec,temp_col_count,temp_minus200_count,temp_invalid_ratio,approx_bad_temp_channels,row_keep_ratio,duplicate_time_rows_removed,time_min,time_max,error,status
+24-1.csv,,,,,,,,,,,,子进程异常退出，exitcode=-11,failed
+24-8.csv,,,,,,,,,,,,子进程异常退出，exitcode=-11,failed
+32.csv,,,,,,,,,,,,子进程异常退出，exitcode=-11,failed
+33.csv,,,,,,,,,,,,子进程异常退出，exitcode=-11,failed
+34.csv,,,,,,,,,,,,子进程异常退出，exitcode=-11,failed
+56.csv,,,,,,,,,,,,子进程异常退出，exitcode=-11,failed
+58.csv,,,,,,,,,,,,子进程异常退出，exitcode=-11,failed
